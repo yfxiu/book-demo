@@ -1,0 +1,56 @@
+<div >
+    <div class="row">
+        <div class="col-md-12">
+        	<!-- <a ui-sref="addbook" class="btn btn-primary">{{buttonname}}</a> -->
+            <a class="btn btn-primary" ng-click='openAddBookModal()' >{{buttonname}}</a>
+            <h1 mytitle>hello Angular!!!!!!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <table class='table table-striped table-bordered table-advance table-hover' ng-table="booklist_table">
+                    <thead>
+                        <th>index</th>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>publisher</th>
+                        <th>date</th>
+                        <th>ctrl</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="book in data">
+                            <td data-title="" style="width: 5%">
+                                {{book.id}}
+                            </td>
+                            <td data-title="" style="width: 15%">
+                                {{book.title}}
+                            </td>
+                            <td data-title="" style="width: 15%">
+                                {{book.author}}
+                            </td>
+                            <td data-title="" style="width: 15%">
+                                {{book.publisher}}
+                            </td>
+                            <td data-title="" style="width: 15%">
+                                {{book.publication_date}}
+                            </td>
+                            <td data-title="">
+                                <div class="btn-group">
+                                    <button class="btn btn-default"
+                                            type="button" data-ng-click="get_book_detail(book.id)">
+                                         Detail
+                                    </button>
+                                    <button class="btn btn-default"
+                                            type="button" data-ng-click="edit_book(book.id)" style="margin-left:10px;">
+                                         Edit
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

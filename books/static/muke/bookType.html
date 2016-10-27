@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="list-group">
+            <a ui-sref="booklist({bookType:0})" class="list-group-item active">
+				Group-By-Publisher
+            </a>
+            <a ng-repeat="p in publishers" ui-sref="booklist({bookType:{{p.id}}})"  class="list-group-item">{{p.id}}-{{p.name}}</a>
+        </div>
+    </div>
+</div>

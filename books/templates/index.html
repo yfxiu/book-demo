@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="zh" ng-app="myApp"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<title>myAngularJS</title>
+	<script src="{{STATIC_URL}}framework/js/jquery-1.9.1.js"></script>
+
+	<script type="text/javascript" src="{{STATIC_URL}}framework/js/angular.min.js"></script>
+	<script src="{{STATIC_URL}}framework/js/angular-ui-router.js"></script>
+	<script src="{{STATIC_URL}}framework/js/ng-grid.js"></script>
+	<script src="{{STATIC_URL}}framework/js/angular-resource.js"></script>
+	<script src="{{ STATIC_URL }}framework/js/ocLazyLoad.min.js"></script>
+	<script src="{{ STATIC_URL }}framework/js/ng-table.js" type="text/javascript"></script>
+	<script src="{{ STATIC_URL }}framework/js/angular-cookies.min.js" type="text/javascript"></script>
+	<script src="{{ STATIC_URL }}framework/js/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+
+
+	<script type="text/javascript" src="{{STATIC_URL}}app.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/directive.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/controller.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/resource.js"></script>
+
+
+
+	<link rel="stylesheet" href="{{STATIC_URL}}framework/css/bootstrap.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}framework/css/ng-grid.css">
+
+
+</head> 
+<body>
+	{# <div class="container"> #}
+		<div class="panel panel-primary">
+		    <div class="panel-heading">
+		        <div class="panel-title"><h1>hello Angular!!!!!!</h1></div>
+		    </div>
+			<div ui-view style='margin-top:10px;'></div>
+		</div>
+	{# </div> #}
+	
+</body> 
+
+
+</html> 

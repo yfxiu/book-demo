@@ -1,0 +1,73 @@
+<div class="container well" ng-controller="BookDetailCtrl">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="/static/data/image/angularjs.jpg" alt="用AngularJS开发下一代WEB应用" width="80%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a ui-sref="booklist({bookType:0})" class="btn btn-primary" style='margin-top:10px;'>Return-To-List</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal" role="form" name="form">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                book name：
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">
+                                    <a href="http://www.hao123.com" target="_blank">《{{name}}》</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                book type：
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">{{type}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                publish date：
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">{{pdate}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                Author：
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">{{author}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                price :
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">{{price}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                have E-book：
+                            </label>
+                            <div class="col-md-10">
+                                <p class="form-control-static">{{Ebook}}</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

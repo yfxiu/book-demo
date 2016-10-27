@@ -1,0 +1,10 @@
+[{
+    "bookId":"1",
+    "index": "1",
+    "name": "WEB应用",
+    "booktype": "compute",
+    "author": "yuanfx",
+    "publishdate": "2014-01-01",
+    "price":"39",
+    "Ebook":"yes"
+}]
